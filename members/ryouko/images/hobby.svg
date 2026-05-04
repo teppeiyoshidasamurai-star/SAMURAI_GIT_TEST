@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="520" viewBox="0 0 960 520" role="img" aria-labelledby="t2">
+  <rect width="960" height="520" fill="#ebe6dc" />
+  <circle cx="720" cy="140" r="56" fill="#ffd666" opacity="0.9" />
+  <path d="M 120 380 L 260 220 L 400 380 Z" fill="#1e4d8b" opacity="0.85" />
+  <rect x="480" y="260" width="360" height="200" rx="20" fill="#fff" stroke="#c9a227" stroke-width="4" />
+  <circle cx="580" cy="360" r="40" fill="none" stroke="#c9a227" stroke-width="6" />
+  <path d="M 700 330 L 760 390 L 700 450 L 640 390 Z" fill="#c9a227" opacity="0.6" />
+  <text x="660" y="200" text-anchor="middle" fill="#1a2330" font-family="system-ui,sans-serif" font-size="26" font-weight="700">Weekend mood</text>
+</svg>
