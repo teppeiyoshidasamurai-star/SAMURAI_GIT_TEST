@@ -1,0 +1,181 @@
+html {
+    font-size: 15px;
+    
+}
+
+
+#image-2 {
+    aspect-ratio: 20/8;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 120px 20px 120px;
+}
+
+#image-1 {
+    margin-right: auto;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    margin-left:40px;
+}
+
+nav a {
+    text-decoration:none;
+    padding-right: 10px;
+}
+
+nav {
+    margin-left: auto;
+    font-size: 150%;
+    text-align: center;
+}
+
+ul li a:hover {
+    color: rgb(248, 194, 230);
+}
+
+header {
+     background-color: rgb(238, 237, 238);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0; 
+    width: 100%;
+    position: fixed;
+    padding: 0 30px;
+    box-sizing: border-box;
+    
+}
+
+
+
+main h1 {
+    font-size: 3rem;
+    border-bottom: 10px solid rgb(248, 194, 230); 
+    text-align: center; 
+    max-width: 100%;
+}
+
+
+
+body h2 {
+    font-size: 2rem;
+    color: white;
+    background-color: rgb(248, 194, 230);
+    padding: 5px;
+    
+
+}
+
+body h3 {
+    font-size: 1.5rem;
+    color:black;
+    background-color: rgb(238, 237, 238);
+    border-left: 5px solid rgb(248, 194, 230);
+    padding: 5px;
+    text-align: center;
+    display: inline-block; 80%;
+    
+
+}
+
+body p {
+    line-height: 30px;
+}
+
+body ul li,ol li {
+    line-height: 30px;
+}
+
+.list-1 {
+    list-style-type: disc;
+}
+
+.list-1 li {
+    padding: 3px 3px 3px 0;
+}
+
+.list-1 li::marker {
+    color: rgb(248, 194, 230);
+}
+
+.list-2{
+    list-style-type: decimal;
+}
+
+.list-2 li {
+    padding: 3px 3px 3px 0;
+}
+
+.list-2 li::marker{
+    content: "✔";
+    color: rgb(248, 194, 230);
+}
+
+th,td {
+    border: 1px solid;
+    padding: 5px;
+}
+
+table {
+    border-collapse:  collapse;
+    margin-bottom: 50px;
+}
+
+
+th {
+    background-color:  rgb(248, 194, 230);
+}
+
+
+#back-btn {
+ display: none;
+
+ padding: 40px 10px;
+ background-color: rgb(248, 194, 230);
+ color: #000;
+ text-decoration: none;
+ border-radius: 50%;
+
+ position: fixed;
+ bottom: 10px;
+ right: 10px;
+}
+
+
+footer img {
+    max-width: 940px;
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(238, 237, 238);
+}
+
+footer p {
+    font-size: 1.5rem;
+    margin: 0;
+
+}
+
+#copyright {
+    margin-bottom: 0;
+}
+
+hr {
+    margin: 0;
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/from.css">
+    <title>入力内容確認フォーム</title>
+</head>
+
+<body>
+
+<header>
+    
+     <div>
+      <img src="images/logo.png" alt="ロゴ" id="image-1" width="300" height="auto">
+    </div>
+
+    <nav>
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="https://www.e-corporation.co.jp/">メディアについて</a></li>
+                <li><a href="kataroguform.html">カタログ請求</a></li>
+                <li><a href="question.html">お問い合わせ</a></li>
+            </ul>
+        </nav>
+
+</header>
+
+<main>
+    <h1>ご入力内容の確認</h1>
+
+    <p class="start">ご入力内容に間違いがないかご確認いただき、ページ下部の「カタログを請求する」ボタンからお申し込みを完了してください。</p>
+
+    <div id="errorMessage"></div>
+
+
+<form name="form1">
+<table border="1">
+    <tr>
+        <th class="koumoku" ><label id="k1" for="">メールアドレス</label></th>
+        <td class="nyuryoku"><div id="email"></div></td>
+    </tr>
+    <tr>
+        <th class="koumoku"><label id="k2" for="">氏名</label></th>
+        <td class="nyuryoku"><div id="kanji"></div></td>
+    </tr>
+    
+    <tr>
+        <th class="koumoku"><label id="k3" for="">フリガナ</label></th>
+        <td class="nyuryoku"><div id="furigana"></div></td>
+    </tr>
+    
+    <tr>
+        <th class="koumoku"><label id="k4" for="">郵便番号</label></th>
+        <td class="nyuryoku" id="zip"><div id="zip1"></div>
+            -
+            <div id="zip2"></div>
+        </td>
+    </tr>
+
+    <tr>
+        <th class="koumoku"><label id="k5" for="">都道府県</label></th>
+        <td class="nyuryoku">
+            <div id="address1"></div>
+        </td>
+    </tr>
+    
+    <tr>
+        <th class="koumoku"><label id="k6" for="">市区町村</label></th>
+        <td class="nyuryoku"><div id="address2"></div></td>
+    </tr>
+
+    <tr>
+        <th class="koumoku"><label id="k7" for=""><br>丁目・番地/ <br>建物名・号室</label></th>
+        <td class="nyuryoku"><div id="address3"></div></td>
+    </tr>
+    
+    <tr>
+        <th class="koumoku"><label id="k8" for="">電話番号</label></th>
+        <td class="nyuryoku"><div id="phone1"></div></td>
+    </tr>
+
+    <tr>
+        <th class="koumoku"><label for="">携帯電話番号</label></th>
+        <td class="nyuryoku"><div id="phone2"></div></td>
+    </tr>
+        <th class="koumoku"><label for="">FAX番号</label></th>
+        <td class="nyuryoku"><div id="phone3"></div></td>
+    <tr>
+        
+    </tr>
+</table>
+
+
+
+
+
+<p class="start">ご入力いただいた情報に間違いがないかご確認の上、「カタログを請求する」ボタンを押してください。</p>
+
+<div class="button">
+        <input type="submit" value="カタログを請求" id="submitBtn">
+        <input type="reset" value="やり直す" id="getReset">
+        
+</div>
+</form>
+
+</main>
+<a id="back-btn" href="#">TOPに戻る</a>
+
+
+<script src="assets/js/buckbtn.js"></script>
+<script src="assets/js/confirm.js"></script>
+</body>
+
+<hr>
+
+<footer>
+    <p>↓↓↓カタログ請求はこちらから↓↓↓</p>
+    <a href="kataroguform.html" target="_blank">
+      <img src="images/banner.png" alt="カタログ請求" width="680px" height="250px">
+    </a>
+    <p>&copy;2026 HOLIDAYVIBESS</p>
+  </footer>
+</html>

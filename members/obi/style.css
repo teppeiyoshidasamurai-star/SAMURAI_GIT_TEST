@@ -1,0 +1,255 @@
+html {
+    font-size: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+}
+
+.nav-tag {
+    width: 110px;
+    height: 40px;
+    border-radius: 999px;
+    background: rgb(253, 240, 249); 
+    font-size: 1.2em;
+    text-align: center;
+    list-style: none;
+    margin-left: 5px;
+}
+
+.nav-tag:hover {
+    background-color: rgb(141, 79, 117);
+    color: rgb(253, 240, 249);
+}
+
+.nav-tag a {
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 2;
+    color: rgb(141, 79, 117);
+}
+
+.nav-tag a:hover {
+    color: rgb(253, 240, 249);
+}
+
+
+.title {
+    font-size: 8em;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(141, 79, 117);
+
+}
+
+.hako {
+    margin-top: 100px;
+
+    opacity: 0;
+    transform: rotateX(70deg) translateY(100px);
+    transform-origin: top;
+
+    transition: 1s;
+}
+
+.hako.show {
+    opacity: 1;
+    transform: rotateX(0) translateY(0);
+}
+
+.p-container {
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.p-profile {
+    display: flex;
+    align-items: center;
+    background-color:rgb(253, 240, 249); 
+    width: 1000px;
+    height: 350px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 100px;
+}
+.p-profile__box {
+    width: 600px;
+    height: 300px;
+}
+
+.p-profile__img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.p-profile__item {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-right: 0px;
+}
+
+.p-profile__caption{
+    color: rgb(173, 109, 149);
+    margin-top: 5px;
+}
+
+.c-textBox {
+    width: 100%;
+}
+
+.text {
+    color:rgb(173, 109, 149);
+    text-align: center;
+    margin:0px 20px;
+}
+
+.p-profile__topic {
+   margin-top: 0; 
+   margin-left: 30px;
+   color: rgb(173, 109, 149);
+}
+.hako {
+    margin-top: 100px;
+}
+
+
+.c-mind {
+    max-width: 1000px;
+    min-height: 500px;
+    background-color: rgb(253, 240, 249);
+    margin-right: auto;
+    margin-left: auto;
+    background-image: url(img/pink_border.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.c-mind__topic {
+    font-weight: bold;
+    text-align: center;
+    font-size: 100%;
+    line-height: 2.3;
+    font-weight: normal;
+    color:rgb(173, 109, 149);
+}
+
+.c-mind__text {
+    width: 1000px;
+    height: 100px;
+    background-color: rgb(253, 240, 249);
+    margin-top: 0;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 100px;
+    text-align: center;
+    color: rgb(141, 79, 117);
+}
+
+.c-mind__title {
+    margin: 0;
+    text-align: center;
+    color: rgb(141, 79, 117);
+}
+
+.c-mind__list {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    padding-left: 0;
+    list-style: none;
+}
+
+
+.item-big {
+    list-style: none;
+    font-size: 1.5em;
+    text-align: center;
+    line-height: 2;
+    margin-top: 30px;
+    color:rgb(173, 109, 149);
+    font-weight: bold;
+}
+
+.item {
+    list-style: none;
+    text-align: center;
+    line-height: 2;
+    color: rgb(173, 109, 149);
+}
+
+.works {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    text-align: center;
+    margin-bottom: 200px;
+}
+
+.works a {
+    text-decoration: none;
+    color: rgb(141, 79, 117);
+    
+}
+
+.works a:hover {
+    color: rgb(173, 109, 149);
+    text-decoration:underline
+}
+
+.works img {
+    transition: 0.3s;
+}
+
+.works img:hover {
+    transform: translateY(-10px);
+}
+
+
+footer {
+    min-width: 1000px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(141, 79, 117);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#e-corp {
+    color: rgb(253, 240, 249);
+    text-align: center;  
+}
+
+#back-btn {
+ display: none;
+
+ padding: 10px 5px;
+ background-color: rgb(253, 240, 249);
+ color: rgb(141, 79, 117);
+ text-decoration: none;
+ border-radius: 50%;
+
+ position: fixed;
+ bottom: 10px;
+ right: 10px;
+}
