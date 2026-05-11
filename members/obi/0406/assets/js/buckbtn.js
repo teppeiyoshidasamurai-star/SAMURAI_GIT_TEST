@@ -10,14 +10,3 @@ window.addEventListener('scroll', () => {
     }
 });
 
-const hako = document.querySelectorAll(".hako");
-
-window.addEventListener("scroll", () => {
-    hako.forEach((item) => {
-        const position = item.getBoundingClientRect().top;
-
-        if (position < window.innerHeight - 100) {
-            item.classList.add("show");
-        }
-    });
-});

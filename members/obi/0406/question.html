@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/question.css">
+    <title>お問い合わせ</title>
+</head>
+
+<body>
+
+<header>
+    
+     <div>
+      <img src="images/logo.png" alt="ロゴ" id="image-1" width="300" height="auto">
+    </div>
+
+    <nav>
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="https://www.e-corporation.co.jp/">メディアについて</a></li>
+                <li><a href="kataroguform.html">カタログ請求</a></li>
+                <li><a href="question.html">お問い合わせ</a></li>
+            </ul>
+        </nav>
+
+</header>
+
+<main>
+    <h1>お問い合わせフォーム</h1>
+
+    <p class="start">以下のフォームに必要事項をご入力いただき、ページ下部の「確認画面へ」のボタンからお問い合わせ内容を送信してください。</p>
+
+    <div id="errorMessage"></div>
+
+<form name="form1">
+<table border="1">
+    <tr>
+        <th class="koumoku" ><label id="k1" for="">メールアドレス</label></th>
+        <td class="nyuryoku"><input type="email" placeholder="例）holiday_vibess@google.com" required name="email"></td>
+    </tr>
+    <tr>
+        <th class="koumoku"><label id="k2" for="">氏名</label></th>
+        <td class="nyuryoku"><input type="text" placeholder="例）山田　太郎" required name="kanji"> </td>
+    </tr>
+    
+    <tr>
+        <th class="koumoku"><label id="k3" for="">フリガナ</label></th>
+        <td class="nyuryoku"><input type="text" placeholder="例）ヤマダ　タロウ" required name="furigana"></td>
+    </tr>
+
+    <tr>
+        <th class="koumoku"><label id="k8" for="">電話番号</label></th>
+        <td class="nyuryoku"><input type="tel" placeholder="例）03-5623-6560" required name="phone1"></td>
+    </tr>
+
+    <tr>
+        <th class="koumoku"><label for="">携帯電話番号</label></th>
+        <td class="nyuryoku"><input type="tel" placeholder="例）03-5623-6560" name="phone2"></td>
+    </tr>
+        <th class="koumoku"><label for="">FAX番号</label></th>
+        <td class="nyuryoku"><input type="tel" placeholder="例）03-5640-6021" name="phone3"></td>
+    <tr>
+        <th class="koumoku"><label for="" id="k4"><br>お問い合わせ分類</label></th>
+        <td class="nyuryoku">
+            <label class="type"><input type="radio" name="kinds" required value="商品について" checked="1">商品について</label>
+            <label class="type"><input type="radio" name="kinds" required value="カタログ請求について">カタログ請求について</label>
+            <label class="type"><input type="radio" name="kinds" required value="その他">その他</label>
+        
+        </td>
+    </tr>
+    <tr>
+        <th class="koumoku"><label for="" id="k5"><br>お問い合わせ内容</label></th>
+        <td class="nyuryoku"><textarea name="content" id="box" placeholder="お問い合わせ内容を入力" required></textarea></td>
+    </tr>
+
+     <tr>
+        <th class="koumoku"><label for="" id="k6">ご連絡方法</label></th>
+        <td class="nyuryoku">
+            <label class="type"><input type="radio" name="kind" required  value="電話" checked="1">電話</label>
+            <label class="type"><input type="radio" name="kind" required value="メール">メール</label>
+            <label class="type"><input type="radio" name="kind" required value="FAX">FAX</label>
+        
+        </td>
+    </tr>
+</table>
+
+
+    
+
+<div class="personal">
+    <h3>個人情報の取り扱いについて</h3>
+    <p id="information">ご入力いただいたお客様情報は、当社の<a href="https://www.e-corporation.co.jp/private/" target="_blank">プライバシーポリシー</a>に基づき取り扱います。<br>
+    内容をご確認のうえ、同意する場合は□にチェックを入れてください。<br>
+    ※チェックを入れない場合、お客様情報は送信されません。</p>
+
+    
+    <input type="checkbox" required id="checkbox">
+    <label for="">同意する</label>
+   
+</div>
+
+<p class="start">ご入力いただいた情報に間違いがないかご確認の上、「確認画面へ」のボタンを押してください。</p>
+
+<div class="button">
+        <input type="button" value="確認画面へ" id="submitBtn">
+        <input type="reset" value="やり直す">
+</div>
+</form>
+</main>
+<a id="back-btn" href="#">TOPに戻る</a>
+
+
+  <script src="assets/js/buckbtn.js"></script>
+  <script src="assets/js/question.js"></script>
+</body>
+
+<hr>
+
+<footer>
+    <p>↓↓↓カタログ請求はこちらから↓↓↓</p>
+    <a href="kataroguform.html" target="_blank">
+      <img src="images/banner.png" alt="カタログ請求" width="680px" height="250px">
+    </a>
+    <p>&copy;2026 HOLIDAYVIBESS</p>
+  </footer>
+
+</html>

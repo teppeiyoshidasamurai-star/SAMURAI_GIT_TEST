@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ToDOアプリ（CRUD）</title>
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+	<header>
+		<h1>Todo アプリ（CRUD）</h1>
+	</header>
+	<main>
+		<section>
+			<form action="" name="form1">
+				<!-- 入力フォーム -->
+				<h2>ToDo新規追加</h2>
+				<div class="form-area">
+					<input id="todo-input" name="addtext" type="text" placeholder="新しいタスクを入力">
+					<button id="add-btn" type="button">追加</button>
+				</div>
+			</form>
+		</section>
+		<section>
+			<h2 id="count">ToDO一覧</h2>
+			<button id="getNotCompleted" class="filter">「未完了」で絞り込む</button>
+			<button id="getCompleted" class="filter">「完了」で絞り込む</button>
+			<button id="getAll" class="filter">すべて表示</button>
+			<button id="completeSelected" class="filter">☑を未完了に戻す</button>
+			<button id="uncompleteSelected" class="filter">☑を完了</button>
+
+			<select name="sort" id="sort">
+				<option value="sort">並べ替え↑↓</option>
+				<option value="new">新しい順</option>
+				<option value="old">古い順</option>
+				<option value="active">未完了優先</option>
+				<option value="priority">優先度順</option>
+			</select>
+			<ul id="todo-list">
+				
+			</ul>
+		</section>
+	</main>
+
+	<!-- 一覧表示 -->
+	<script src="assets/js/app.js"></script>
+</body>
+
+</html>
