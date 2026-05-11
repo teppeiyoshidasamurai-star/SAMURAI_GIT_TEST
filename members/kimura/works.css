@@ -1,0 +1,108 @@
+.top-area {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 30px 80px;
+}
+
+.title {
+    font-size: 60px;
+
+    font-family: 游明朝;
+
+    color: white;
+
+    font-weight: bold;
+
+    margin: 0;
+}
+
+.menu {
+        display: flex;
+        gap: 30px;
+}
+
+ .menu a {
+        padding-right: 2vw;
+        font-size: 20px;
+        color: white;
+        font-family: 游明朝;   
+}
+
+body {
+    background-color: rgb(181, 215, 203);
+}
+
+p {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+.works img {
+    width: 700px;
+    height: 400px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.works {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    font-family: 游明朝;
+    color: white;
+    text-align: center;
+}
+
+#page_top {
+    width: 90px;
+    height: 90px;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    background-color: #ffb1b1;
+    opacity: 0.6; /*透明度を指定*/
+    border-radius: 50%;
+}
+
+#page_top a {
+    position: relative;/*親にするためのプロパティ*/
+    display: block;
+    width: 90px;
+    height: 90px;
+    text-decoration: none;/*タグの下線を消す*/
+}
+
+#page_top a::before{
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;/*文字の太さ*/
+  content: '↑';
+  font-size: 25px;
+  color: #fff;
+  position: absolute;/*aタグ（親要素）を基準にした絶対位置。優先度No.1*/
+  width: 25px;
+  height: 25px;
+  top: -40px;/*上方向へ40px移動*/
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+}
+#page_top a::after{
+  content: 'PAGE TOP';
+  font-size: 13px;
+  color: #fff;
+  position: absolute; /*aタグ（親要素）を基準にした絶対位置*/
+  top: 45px; /*下方向へ45px移動*/
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+}
