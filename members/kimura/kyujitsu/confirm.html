@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>カタログ請求フォーム</title>
+    <link rel="stylesheet" href="css/form.css">
+</head>
+<body>
+  <header>
+    <div class="logo"><img src="images/logo.png" alt="ロゴ"></div>
+   <nav>
+    <ul>
+    <li><a href="https://www.google.com">ホーム</a></li>
+    <li><a href="https://www.google.com">メディアについて</a></li>
+    <li><a href="https://www.google.com">お問い合わせ</a></li>
+    </ul>
+   </nav>
+  </header>
+  <p>カタログ請求フォーム</p>
+  <main>
+    <h1>カタログ請求フォーム</h1>
+    <p id="text">HOLIDAY VIBESのウェブサイトを閲覧いただきありがとうございます。<br>
+       下記フォームに必要事項をご記入の上、カタログをご請求ください。</p>
+    <div id="errorMessage"></div>
+    <div id="patternError"></div>
+  <form name="form1">
+  <p class="notice"><span class="required">必須</span> 印は必須項目です</p>
+
+  <table class="form-table">
+    <tr>
+      <th><span>必須</span>お名前</th>
+      <td><div id="name"></div></td>
+    </tr>
+    <tr>
+      <th><span>必須</span>フリガナ</th>
+      <td><div id="furigana"></div></td>
+    </tr>
+    <tr>
+      <th><span>必須</span>メールアドレス</th>
+      <td><div id="email"></div></td>
+    </tr>
+    <tr>
+      <th><span>必須</span>電話番号</th>
+      <td><div id="phone"></div></td>
+    </tr>
+    <tr>
+      <th><span>必須</span>郵便番号</th>
+      <td><div id="post"></div></td>
+    </tr>
+    <tr>
+      <th><span>必須</span>ご住所</th>
+      <td><div id="address"></div></td>
+    </tr>
+    <tr>
+      <th>備考</th>
+      <td><div id="note"></div></td>
+    </tr>
+  </table>
+
+    <div class="form-buttons">
+      <input type="submit" id="btn" value="送信">
+      <input type="reset" value="リセット">
+    </div>
+</form>
+</main>
+  <footer>
+    <div class="banner"><img src="images/banner.png" alt="バナー表示"></div>
+    <p>©2026 HOLIDAY VIBESS</p>
+  </footer>
+  <script src="confirm.js"></script>
+</body>
+</html>

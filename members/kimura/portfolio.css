@@ -12,7 +12,7 @@ p {
     font-size: 35px;
 }
 
-#about, #skills, #personal, #message {
+#about, #skills, #personal, #message,#members {
     text-align: center;
 }
 
@@ -108,6 +108,7 @@ main {
 
 main p {
     font-size: 20px;
+    line-height: 2.5;
 }
 
 #page_top {
@@ -161,11 +162,33 @@ main p {
 .menu {
         display: flex;
         gap: 30px;
-    }
+}
 
-    .menu a {
+.menu a {
         padding-right: 2vw;
         font-size: 20px;
         color: white;
         font-family: 游明朝;
-    }
+}
+
+.space {
+    margin-right: 50px;
+}
+
+#yaoo {
+    width: 359px;
+    height: 359px;
+}
+
+#members p {
+    font-size: 30px;
+}
+
+.member-list {
+    display: flex;
+    justify-content: center;
+    gap: 300px;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 100px;
+}

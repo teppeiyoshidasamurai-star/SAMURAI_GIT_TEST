@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../Downloads/9cb3e0f2-3c72-4156-aacd-abeb80ce6be7/sample"
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5503,
+		"liveServer.settings.multiRootWorkspaceName": "kyujitsu"
+	}
+}

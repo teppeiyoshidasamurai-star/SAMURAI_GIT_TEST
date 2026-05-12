@@ -1,0 +1,18 @@
+#parent p{
+    font-size: 24px;
+}
+
+#grandchild p{
+    font-size: 30px;
+}
+
+.text {
+    color: red;
+}
+
+#grandchild p{
+    color: blue;
+}
+/* #grandchild .text{
+      color: blue;
+    } 上と同じ意味になる*/
