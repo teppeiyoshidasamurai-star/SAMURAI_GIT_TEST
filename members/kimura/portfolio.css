@@ -16,29 +16,25 @@ p {
     text-align: center;
 }
 
-.logo img {
-    aspect-ratio: 16/9;
-    object-fit: cover;
-    object-position: center;
+main {
+    margin-top: 100px;
+}
 
-    width: 500px;
-    height: auto;
+.logo img {
+    object-fit: cover;
+
+    width: 320px;
+    height: 320px;
 
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
 
-    clip-path: polygon(
-        40% 0%,
-        100% 0%,
-        100% 100%,
-        0% 100%
-    );
+    border-radius: 50%;
+
 }
 
 .logo {
     display: flex;
-    justify-content: flex-end; /*flexで並べたものを右端に寄せる*/
-    margin-right: 80px;
-    margin-top: 30px;
+    justify-content: center;
 }
 
 #about,
@@ -67,9 +63,9 @@ p {
 
     align-items: center;
 
-    justify-content: center;
+    justify-content: space-between;
 
-    gap: 40px;
+    padding: 30px 80px;
 }
 
 .title {
@@ -80,6 +76,8 @@ p {
     color: white;
 
     font-weight: bold;
+
+    margin: 0;
 }
 
 .flower1 {
@@ -159,3 +157,15 @@ main p {
   margin: auto;
   text-align: center;
 }
+
+.menu {
+        display: flex;
+        gap: 30px;
+    }
+
+    .menu a {
+        padding-right: 2vw;
+        font-size: 20px;
+        color: white;
+        font-family: 游明朝;
+    }
