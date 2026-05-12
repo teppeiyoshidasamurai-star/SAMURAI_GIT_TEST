@@ -10,14 +10,18 @@ window.addEventListener('scroll', () => {
     }
 });
 
-const hako = document.querySelectorAll(".hako");
 
-window.addEventListener("scroll", () => {
-    hako.forEach((item) => {
-        const position = item.getBoundingClientRect().top;
+const text2 = "WORKS";
+const title2 = document.getElementById('title2');
 
-        if (position < window.innerHeight - 100) {
-            item.classList.add("show");
-        }
-    });
-});
+let index = 0;
+
+function typing2 () {
+    if (index < text2.length) {
+        title2.textContent += text2[index];
+        index++;
+        setTimeout(typing2,150);
+    }
+}
+
+typing2();

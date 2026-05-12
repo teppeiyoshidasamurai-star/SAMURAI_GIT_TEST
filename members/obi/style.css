@@ -10,18 +10,24 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 200px;
+    min-height: 200px; 
+    display: flex;
+    gap: 10px;
+}
+
+.nav-tag-ul {
+    display: flex;
+    gap: 10px;
 }
 
 .nav-tag {
-    width: 110px;
-    height: 40px;
+    max-width: 150px;
+    min-height: 40px;
     border-radius: 999px;
     background: rgb(253, 240, 249); 
     font-size: 1.2em;
     text-align: center;
     list-style: none;
-    margin-left: 5px;
 }
 
 .nav-tag:hover {
@@ -37,6 +43,8 @@ header {
     align-items: center;
     line-height: 2;
     color: rgb(141, 79, 117);
+    padding: 10px 20px;
+    font-weight: 700;
 }
 
 .nav-tag a:hover {
@@ -44,7 +52,15 @@ header {
 }
 
 
-.title {
+#title1 {
+    font-size: 8em;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(141, 79, 117);
+
+}
+
+#title2 {
     font-size: 8em;
     font-weight: bold;
     text-align: center;
@@ -58,8 +74,8 @@ header {
     opacity: 0;
     transform: rotateX(70deg) translateY(100px);
     transform-origin: top;
-
     transition: 1s;
+
 }
 
 .hako.show {
@@ -68,7 +84,7 @@ header {
 }
 
 .p-container {
-    width: 1200px;
+    max-width: 1200px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -76,21 +92,24 @@ header {
 .p-profile {
     display: flex;
     align-items: center;
+    justify-content: center;
     background-color:rgb(253, 240, 249); 
-    width: 1000px;
-    height: 350px;
+    max-width: 1000px;
+    min-height: 350px;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 100px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 .p-profile__box {
-    width: 600px;
-    height: 300px;
+    max-width: 600px;
+    min-height: 300px;
+    padding-left: 10px;
 }
 
 .p-profile__img {
-    width: 200px;
-    height: 200px;
+    max-width: 200px;
+    min-height: 200px;
     border-radius: 50%;
 }
 
@@ -107,25 +126,29 @@ header {
     margin-top: 5px;
 }
 
-.c-textBox {
-    width: 100%;
+.c-textBox1 {
+    padding-left: 50px;
 }
 
 .text {
     color:rgb(173, 109, 149);
     text-align: center;
-    margin:0px 20px;
 }
 
 .p-profile__topic {
    margin-top: 0; 
-   margin-left: 30px;
    color: rgb(173, 109, 149);
 }
 .hako {
     margin-top: 100px;
 }
 
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
 
 .c-mind {
     max-width: 1000px;
@@ -141,6 +164,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .c-mind__topic {
@@ -153,8 +177,8 @@ header {
 }
 
 .c-mind__text {
-    width: 1000px;
-    height: 100px;
+    max-width: 1000px;
+    min-height: 100px;
     background-color: rgb(253, 240, 249);
     margin-top: 0;
     margin-right: auto;
@@ -217,6 +241,7 @@ header {
 
 .works img {
     transition: 0.3s;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .works img:hover {
@@ -226,7 +251,7 @@ header {
 
 footer {
     min-width: 1000px;
-    height: 100px;
+    min-height: 100px;
     margin-left: auto;
     margin-right: auto;
     background-color: rgb(141, 79, 117);
@@ -241,15 +266,23 @@ footer {
 }
 
 #back-btn {
- display: none;
+    display: none;
 
- padding: 10px 5px;
- background-color: rgb(253, 240, 249);
- color: rgb(141, 79, 117);
- text-decoration: none;
- border-radius: 50%;
+    padding: 10px 5px;
+    background-color: rgb(253, 240, 249);
+    color: rgb(141, 79, 117);
+    text-decoration: none;
+    border-radius: 50%;
 
- position: fixed;
- bottom: 10px;
- right: 10px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+@media screen and (max-width:768px) {
+    .works {
+        flex-direction: column;
+        align-items: center;
+    }
+    
 }

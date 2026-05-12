@@ -5,20 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My profile</title>
+    <link rel="stylesheet" href="sanitize.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
-        <li class="nav-tag">
-            <a href="index.html">MY PROFILE</a>
-        </li>
-        <li class="nav-tag">
-            <a href="work.html" class="link">WORKS</a>
-        </li>
+        <ul class="nav-tag-ul">
+            <li class="nav-tag">
+                <a href="index.html">MY PROFILE</a>
+            </li>
+
+            <li class="nav-tag">
+                <a href="work.html" class="link">WORKS</a>
+            </li>
+
+            <li class="nav-tag">
+                <a href="https://teppeiyoshidasamurai-star.github.io/SAMURAI_GIT_TEST/members/kimura/"
+                    target="_blank">木村さん</a>
+            </li>
+            <li class="nav-tag">
+                <a href="https://teppeiyoshidasamurai-star.github.io/SAMURAI_GIT_TEST/members/yaoo/"
+                    target="_blank">小倉さん</a>
+            </li>
+        </ul>
     </header>
     <article>
-        <p class="title">MY PROFILE</p>
+        <p id="title1"></p>
         <section class="l-section l-about">
             <div class="p-container">
                 <div class="p-profile">
@@ -29,7 +42,7 @@
                             <figcaption class="p-profile__caption">文系卒子</figcaption>
                         </figure>
                     </div>
-                    <div class="c-textBox">
+                    <div class="c-textBox1">
                         <p class="text">はじめまして。文系卒子（ぶんけいそつこ）です。 <br>
                             2002年生まれの山梨県出身で、MBTIはINFJです。<br>
                             大学では国際系の学部に所属し、英語と韓国語を専攻していました。<br>
@@ -42,7 +55,7 @@
 
         <section class="hako">
             <div class="p-profile">
-                <div class="c-textBox">
+                <div class="c-textBox2">
                     <h2 class="c-mind__topic">
                         「시작이 반이다(始めることが半分だ)」という韓国のことわざがあります。
                         <br>
@@ -54,7 +67,7 @@
             </div>
         </section>
         <section class="hako">
-            <div class="movie-container">
+            <div class="container">
                 <div class="c-mind">
                     <h2 class="c-mind__title">趣味</h2>
                     <ul class="c-mind__list">
@@ -63,16 +76,16 @@
                         <li class="item">散歩</li>
                     </ul>
                 </div>
-                <div class="c-textBox">
+                <div class="c-textBox">   
                     <p class="c-mind__text">
                         インドア派なので最近は編み物にはまっています。いろいろな小物を作るのが楽しいです。 <br>
                         暖かくなると運動がてら家の周りを散歩するのも好きです。季節の流れを感じたりちょっとした変化を見つけられるとうれしくなります。
                     </p>
-                </div>
+                </div>     
             </div>
         </section>
         <section class="hako">
-            <div class="chiken-container">
+            <div class="container">
                 <div class="c-mind">
                     <h2 class="c-mind__title">私の長所</h2>
                     <ul class="c-mind__list">
@@ -83,15 +96,15 @@
                 </div>
                 <div class="c-textBox">
                     <p class="c-mind__text">
-                       私はチームの先頭に立ってリーダーシップをとるよりも、メンバーの意見や悩みを聞いて一緒に考え解決策や方向性を見出すことが得意です。<br>
-                       全体を陰で支える縁の下の力持ちのような存在としてチームに貢献できればと考えています。 <br>
-                       また与えられた仕事に真面目に取り組み、最後まであきらめずやり通す粘り強いところも私のアピールポイントです。
+                        私はチームの先頭に立ってリーダーシップをとるよりも、メンバーの意見や悩みを聞いて一緒に考え解決策や方向性を見出すことが得意です。<br>
+                        全体を陰で支える縁の下の力持ちのような存在としてチームに貢献できればと考えています。 <br>
+                        また与えられた仕事に真面目に取り組み、最後まであきらめずやり通す粘り強いところも私のアピールポイントです。
                     </p>
                 </div>
             </div>
         </section>
         <section class="hako">
-            <div class="dog-container">
+            <div class="container">
                 <div class="c-mind">
                     <h2 class="c-mind__title">今年の目標</h2>
                     <ul class="c-mind__list">
@@ -110,7 +123,7 @@
             </div>
         </section>
         <section class="hako">
-            <div class="shikaku-container">
+            <div class="container">
                 <div class="c-mind">
                     <h2 class="c-mind__title">取得した資格</h2>
                     <ul class="c-mind__list">
@@ -129,23 +142,24 @@
         </section>
         <section class="hako">
             <div class="p-profile">
-                <div class="c-textBox">
+                <div class="c-textBox2">
                     <h2 class="c-mind__topic">
                         文系出身で未経験の私がシステムエンジニアとして働くことに不安がないとは言いません。
                         <br>
                         でも今は知らない分野への興味や新しく挑戦することに対するわくわくした気持ちのほうが大きいです。
                         <br>
-                        社会人として、またシステムエンジニアとして新たなスタートを切った今のこの新鮮な気持ちを忘れずに精一杯頑張ってきます。
+                        社会人として、またシステムエンジニアとして新たなスタートを切った今のこの新鮮な気持ちを忘れずに精一杯頑張っていきます。
                     </h2>
                 </div>
             </div>
         </section>
     </article>
     <a id="back-btn" href="#">TOPに戻る</a>
-    <script src="buckBtn.js"></script>
+    <footer>
+        <p id="e-corp">©e-corporation.jp</p>
+    </footer>
+    <script src="myprofile.js"></script>
 </body>
-<footer>
-    <p id="e-corp">©e-corporation.jp</p>
-</footer>
+
 
 </html>
