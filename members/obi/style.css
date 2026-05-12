@@ -11,17 +11,18 @@ header {
     justify-content: center;
     align-items: center;
     min-height: 200px;
+    gap: 10px;
 }
 
 .nav-tag {
-    max-width: 110px;
+    max-width: 150px;
     min-height: 40px;
     border-radius: 999px;
     background: rgb(253, 240, 249); 
     font-size: 1.2em;
     text-align: center;
     list-style: none;
-    margin-left: 5px;
+    display: flex;
 }
 
 .nav-tag:hover {
@@ -37,6 +38,8 @@ header {
     align-items: center;
     line-height: 2;
     color: rgb(141, 79, 117);
+    padding: 10px 20px;
+    font-weight: 700;
 }
 
 .nav-tag a:hover {
@@ -76,6 +79,7 @@ header {
 .p-profile {
     display: flex;
     align-items: center;
+    justify-content: center;
     background-color:rgb(253, 240, 249); 
     max-width: 1000px;
     min-height: 350px;
@@ -86,6 +90,7 @@ header {
 .p-profile__box {
     max-width: 600px;
     min-height: 300px;
+    padding-left: 10px;
 }
 
 .p-profile__img {
@@ -107,19 +112,17 @@ header {
     margin-top: 5px;
 }
 
-.c-textBox {
-    max-width: 100%;
+.c-textBox1 {
+    padding-left: 50px;
 }
 
 .text {
     color:rgb(173, 109, 149);
     text-align: center;
-    margin:0px 20px;
 }
 
 .p-profile__topic {
    margin-top: 0; 
-   margin-left: 30px;
    color: rgb(173, 109, 149);
 }
 .hako {
