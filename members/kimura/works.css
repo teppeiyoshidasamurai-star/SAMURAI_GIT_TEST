@@ -25,7 +25,7 @@
         gap: 30px;
 }
 
- .menu a {
+.menu a {
         padding-right: 2vw;
         font-size: 20px;
         color: white;
@@ -40,6 +40,8 @@ p {
     font-size: 20px;
     color: white;
     text-align: center;
+    line-height: 2.5;
+    margin-bottom: 50px;
 }
 
 .works img {
