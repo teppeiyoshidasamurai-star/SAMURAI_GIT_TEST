@@ -1,153 +1,151 @@
 <!doctype html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>○コーポレーション | 新入社員向け Git 学習</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body data-base="" data-nav="home">
-    <header class="site-header" id="site-header"></header>
 
-    <section class="hero" id="top">
-      <div class="hero__inner">
-        <p class="hero__label">Git / GitHub Training</p>
-        <h1 class="hero__title">
-          ひとつのプロジェクトを、<br />
-          みんなの手で育てていく。
-        </h1>
-        <p class="hero__lead">
-          ○コーポレーションの新入社員の皆さんへ。fork、ブランチ、プルリクエストを通じて、同じリポジトリを安全に共同で直していく感覚を、このサイトで体験してください。
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>○コーポレーション | 新入社員向け Git 学習</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body data-base="" data-nav="home">
+  <header class="site-header" id="site-header"></header>
+
+  <section class="hero" id="top">
+    <div class="hero__inner">
+      <p class="hero__label">Git / GitHub Training</p>
+      <h1 class="hero__title">
+        ひとつのプロジェクトを、<br />
+        みんなの手で育てていく。
+      </h1>
+      <p class="hero__lead">
+        ○コーポレーションの新入社員の皆さんへ。fork、ブランチ、プルリクエストを通じて、同じリポジトリを安全に共同で直していく感覚を、このサイトで体験してください。
+      </p>
+      <div class="hero__actions">
+        <a class="btn btn--gold" href="info.html">新着情報を見る</a>
+        <a class="btn btn--ghost" href="#cheer">応援メッセージ</a>
+      </div>
+    </div>
+    <div class="scroll-hint" aria-hidden="true">
+      <span>SCROLL</span>
+      <span class="scroll-hint__line"></span>
+    </div>
+  </section>
+
+  <section class="section section--paper">
+    <div class="section__inner">
+      <header class="section__head js-reveal">
+        <p class="section__eyebrow">Message</p>
+        <h2 class="section__title">新入社員の皆さんへ</h2>
+        <p class="section__lead">
+          このサイトは学習用のベースです。各メンバー用のページは、それぞれがフォルダと
+          HTML を追加し、プルリクエストで取り込んでいきます。まだページがなくても問題ありません。
         </p>
-        <div class="hero__actions">
-          <a class="btn btn--gold" href="info.html">新着情報を見る</a>
-          <a class="btn btn--ghost" href="#cheer">応援メッセージ</a>
-        </div>
+      </header>
+      <div class="grid-2">
+        <article class="card js-reveal">
+          <h3>共同で直すということ</h3>
+          <p>
+            差分が見えること、レビューで気づきが増えること、履歴が残ること。チーム開発の入口として、小さな修正から慣れていきましょう。
+          </p>
+        </article>
+        <article class="card js-reveal">
+          <h3>メンバーページについて</h3>
+          <p>
+            ヘッダーの「新入社員 A〜C」は各自が担当して作成します。サンプルとして「散布流子」のプロフィール（1つの HTML 内を 100vh ごとのセクションにした例）も用意してあります。構成の参考にしてください。
+          </p>
+        </article>
       </div>
-      <div class="scroll-hint" aria-hidden="true">
-        <span>SCROLL</span>
-        <span class="scroll-hint__line"></span>
-      </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="section section--paper">
-      <div class="section__inner">
-        <header class="section__head js-reveal">
-          <p class="section__eyebrow">Message</p>
-          <h2 class="section__title">新入社員の皆さんへ</h2>
-          <p class="section__lead">
-            このサイトは学習用のベースです。各メンバー用のページは、それぞれがフォルダと
-            HTML を追加し、プルリクエストで取り込んでいきます。まだページがなくても問題ありません。
-          </p>
-        </header>
-        <div class="grid-2">
-          <article class="card js-reveal">
-            <h3>共同で直すということ</h3>
-            <p>
-              差分が見えること、レビューで気づきが増えること、履歴が残ること。チーム開発の入口として、小さな修正から慣れていきましょう。
-            </p>
-          </article>
-          <article class="card js-reveal">
-            <h3>メンバーページについて</h3>
-            <p>
-              ヘッダーの「新入社員 A〜C」は各自が担当して作成します。サンプルとして「散布流子」のプロフィール（1つの HTML 内を 100vh ごとのセクションにした例）も用意してあります。構成の参考にしてください。
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="cheer">
-      <div class="section__inner js-reveal">
-        <header class="section__head">
-          <p class="section__eyebrow">Cheer</p>
-          <h2 class="section__title">応援メッセージを送ってください！</h2>
-          <p class="section__lead">
-            チームのみんなへひとこと。学習用のため送信内容は保存されませんが、フォームと表示の動きは JavaScript で体験できます。
-          </p>
-        </header>
-        <div class="cheer">
-          <h3 class="cheer__title">メッセージを書いてみる</h3>
-          <p class="cheer__text">
-            新入社員への応援、今日の学び、気づきなど、自由な内容で構いません。
-          </p>
-          <form class="cheer__form" id="cheer-form" action="#" method="post">
-            <label for="cheer-body">メッセージ</label>
-            <textarea
-              id="cheer-body"
-              name="body"
-              placeholder="例：プルリクエスト、初めて出せました！"
-              maxlength="500"
-            ></textarea>
-            <button type="submit" class="btn btn--gold">送信する（デモ）</button>
-          </form>
-          <p class="cheer__feedback" id="cheer-feedback" role="status"></p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section--paper">
-      <div class="section__inner">
-        <header class="section__head js-reveal">
-          <p class="section__eyebrow">Strength</p>
-          <h2 class="section__title">新入社員の強み</h2>
-          <p class="section__lead">
-            若さや協調性、学習スピード。会社が期待していることの一部をピックアップしました。
-          </p>
-        </header>
-        <div class="grid-3">
-          <article class="card js-reveal">
-            <p class="card__num">01</p>
-            <h3>学ぶ速度</h3>
-            <p>新しいツールやルールへの適応が速く、チームの進化に直結します。</p>
-          </article>
-          <article class="card js-reveal">
-            <p class="card__num">02</p>
-            <h3>協調性</h3>
-            <p>レビューやペア作業で力を発揮。声をかけ合える文化をつくれます。</p>
-          </article>
-          <article class="card js-reveal">
-            <p class="card__num">03</p>
-            <h3>フレッシュな視点</h3>
-            <p>当たり前を疑う発想が、仕組み改善のきっかけになります。</p>
-          </article>
-        </div>
-        <p class="text-center mt-0" style="margin-top: 2rem">
-          <a class="link-arrow" href="strength.html">Strength ページへ</a>
+  <section class="section" id="cheer">
+    <div class="section__inner js-reveal">
+      <header class="section__head">
+        <p class="section__eyebrow">Cheer</p>
+        <h2 class="section__title">応援メッセージを送ってください！</h2>
+        <p class="section__lead">
+          チームのみんなへひとこと。学習用のため送信内容は保存されませんが、フォームと表示の動きは JavaScript で体験できます。
         </p>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="section__inner">
-        <header class="section__head js-reveal">
-          <p class="section__eyebrow">Info</p>
-          <h2 class="section__title">新着情報</h2>
-          <p class="section__lead">社内学習スケジュールやお知らせのダミーです。</p>
-        </header>
-        <ul class="news-list js-reveal">
-          <li>
-            <a href="info.html">
-              <time datetime="2026-05-01">2026.5.1</time>
-              <span class="cat">／お知らせ</span>
-              <span>Git 学習用リポジトリの運用開始</span>
-            </a>
-          </li>
-          <li>
-            <a href="info.html">
-              <time datetime="2026-04-22">2026.4.22</time>
-              <span class="cat">／コラム</span>
-              <span>プルリクエストの書き方チェックリスト</span>
-            </a>
-          </li>
-        </ul>
-        <p class="text-center mt-0" style="margin-top: 1.5rem">
-          <a class="link-arrow" href="info.html">Info 一覧へ</a>
+      </header>
+      <div class="cheer">
+        <h3 class="cheer__title">メッセージを書いてみる</h3>
+        <p class="cheer__text">
+          新入社員への応援、今日の学び、気づきなど、自由な内容で構いません。
         </p>
+        <form class="cheer__form" id="cheer-form" action="#" method="post">
+          <label for="cheer-body">メッセージ</label>
+          <textarea id="cheer-body" name="body" placeholder="例：プルリクエスト、初めて出せました！" maxlength="500"></textarea>
+          <button type="submit" class="btn btn--gold">送信する（デモ）</button>
+        </form>
+        <p class="cheer__feedback" id="cheer-feedback" role="status"></p>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <footer class="site-footer" id="site-footer"></footer>
-    <script src="main.js" defer></script>
-  </body>
+  <section class="section section--paper">
+    <div class="section__inner">
+      <header class="section__head js-reveal">
+        <p class="section__eyebrow">Strength</p>
+        <h2 class="section__title">新入社員の強み</h2>
+        <p class="section__lead">
+          若さや協調性、学習スピード。会社が期待していることの一部をピックアップしました。
+        </p>
+      </header>
+      <div class="grid-3">
+        <article class="card js-reveal">
+          <p class="card__num">01</p>
+          <h3>学ぶ速度</h3>
+          <p>新しいツールやルールへの適応が速く、チームの進化に直結します。</p>
+        </article>
+        <article class="card js-reveal">
+          <p class="card__num">02</p>
+          <h3>協調性</h3>
+          <p>レビューやペア作業で力を発揮。声をかけ合える文化をつくれます。</p>
+        </article>
+        <article class="card js-reveal">
+          <p class="card__num">03</p>
+          <h3>フレッシュな視点</h3>
+          <p>当たり前を疑う発想が、仕組み改善のきっかけになります。</p>
+        </article>
+      </div>
+      <p class="text-center mt-0" style="margin-top: 2rem">
+        <a class="link-arrow" href="strength.html">Strength ページへ</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section__inner">
+      <header class="section__head js-reveal">
+        <p class="section__eyebrow">Info</p>
+        <h2 class="section__title">新着情報</h2>
+        <p class="section__lead">社内学習スケジュールやお知らせのダミーです。</p>
+      </header>
+      <ul class="news-list js-reveal">
+        <li>
+          <a href="info.html">
+            <time datetime="2026-05-01">2026.5.1</time>
+            <span class="cat">／お知らせ</span>
+            <span>Git 学習用リポジトリの運用開始</span>
+          </a>
+        </li>
+        <li>
+          <a href="info.html">
+            <time datetime="2026-04-22">2026.4.22</time>
+            <span class="cat">／コラム</span>
+            <span>プルリクエストの書き方チェックリスト</span>
+          </a>
+        </li>
+      </ul>
+      <p class="text-center mt-0" style="margin-top: 1.5rem">
+        <a class="link-arrow" href="info.html">Info 一覧へ</a>
+      </p>
+    </div>
+  </section>
+
+  <footer class="site-footer" id="site-footer"></footer>
+  <script src="main.js" defer></script>
+</body>
+
 </html>

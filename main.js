@@ -22,9 +22,9 @@
     ];
 
     var members = [
-      { href: base + "newcomer-a/index.html", label: "おぐら　さん" },
-      { href: base + "newcomer-b/index.html", label: "おび さん" },
-      { href: base + "newcomer-c/index.html", label: "きむら さん" },
+      { href: base + "members/yaoo/", label: "おぐら　さん" },
+      { href: base + "members/obi/", label: "おび さん" },
+      { href: base + "members/kimura/", label: "きむら さん" },
       { href: base + "members/ryuko/index.html", label: "散布流子（サンプル）" },
     ];
 

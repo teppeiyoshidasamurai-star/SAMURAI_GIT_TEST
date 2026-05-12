@@ -1,0 +1,261 @@
+html {
+    font-size: 15px;
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;/*ブラウザｈ余白をなくす*/
+    text-align: center;
+    font-family: sans-serif;
+    background-color: #ffff;
+    color: #4a4a4a;
+    line-height: 1.8;/*行間*/
+}
+
+/*ヘッダー*/
+header {
+    position: fixed;/*スクロールしても固定される*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255,255,255,0.75);
+    backdrop-filter: blur(10px);/*背景をぼかす*/
+    z-index: 1000;/*ほかの要素よりも前に表示*/ 
+    border-bottom: 1px solid rgba(220,220,220,0.4);/*薄い境界線*/      
+}
+
+
+header nav {
+    width: 100%;  
+    padding:  20px 60px;
+    text-align: left;
+}
+
+header ul {
+    display: flex;/*横並び*/
+    justify-content: flex-start; /*左寄せ*/       
+    gap: 40px;  
+    list-style: none;/*・を消す*/
+    margin: 0;
+    padding: 0;       
+}
+
+header li {
+    font-size: 16px;
+    letter-spacing: 0.08em;
+}
+
+header a{
+    text-decoration: none;
+    color: #666;
+    transition: 0.3s;/*hoverを滑らかに*/
+}
+header a:hover{
+    color: #aaa;/*hover時マウスを乗せると薄くなるアニメーション*/
+}
+
+
+/*main*/
+main{
+    padding-top: 80px;/* fixedヘッダー分だけ下げる*/
+    display: block;
+}
+.topmainvisual{
+    width: 100%;
+    height: 65vh;
+    display: block;/* 左右の隙間を消す*/
+    object-fit: cover;
+}
+
+section{
+    padding: 100px 8%;
+}
+
+section h2{
+    font-size: 4rem;
+    font-weight: 200;
+    letter-spacing: 0.15em;
+    color: #888;
+    margin-bottom: 80px;
+}
+
+#about{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.profile-img{
+    width: 360px;
+    border-radius: 50%;/*丸くする*/
+    object-fit: cover;
+    margin-bottom: 40px;
+}
+#about h3{
+    font-size: 2.4rem;
+    font-weight: 250;
+    letter-spacing: 0.08em;
+    color: #444;
+    margin-bottom: 30px;
+}
+
+#about p{
+    max-width: 720px;
+    margin: 0 auto;
+    font-size: 1.08rem;
+    line-height: 2;
+    color: #666;
+
+}
+
+.btn{
+    display: inline-block;/*ボタンぽい箱にする　幅や余白をつけるため*/
+    margin-top: 50px;
+    padding: 16px 36px;
+    border: 1px solid rgba(180,180,180,0.4);
+    border-radius: 999px; /* 丸ボタン */
+    text-decoration: none;
+    color: #555;
+    background: rgba(255,255,255,0.6);
+    backdrop-filter: blur(8px);
+    letter-spacing: 0.06em;
+    font-size: 0.95rem;
+    transition: all 0.35s ease;
+}
+.btn:hover{
+    transform: translateY(-4px);/*少し浮く*/
+    box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+    background: rgba(255,255,255,0.95);
+}
+
+.worklists{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1500px;
+    flex-wrap: wrap;/* 狭い画面で折り返す */
+    margin: 0 auto;
+}
+
+.worklists div {
+    width: 460px;
+}
+.worklists img{
+    width: 100%;
+    height: 320px;
+    object-fit: contain;
+    display: block;
+}
+.worklists p{
+    margin: 0;
+    padding: 24px;
+    font-size: 1rem;
+    color: #555;
+    letter-spacing: 0.04em;
+}
+@media screen and (max-width: 768px){
+
+    .worklists{
+        flex-wrap: wrap;
+    }
+
+    .worklists div{
+        width:100%;
+        max-width:420px;
+    }
+
+}
+
+footer{
+    margin-top: 140px;
+    padding: 120px 8%;
+    background: rgba(248,248,248,0.8);
+    border-top: 1px solid rgba(220,220,220,0.4);
+    text-align: center;
+}
+footer h2{
+    font-size: 2rem;
+    font-weight: 200;
+    letter-spacing: 0.12em;
+    color: #888;
+    margin-bottom: 35px;
+}
+footer p{
+    font-size: 1.15rem;
+    color: #666;
+}
+
+.aboutvisual{
+    width: 100%;
+    height: 65vh;
+    display: block;
+    object-fit: cover;
+}
+#skills{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+#skills ul{
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    padding: 0;
+    list-style: none;
+    flex-wrap: wrap;
+}
+#skill li{
+    width: 500px;
+    padding: 35px;
+    background: rgba(255,255,255,0.75);
+    border-radius: 24px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+    font-size: 1.5rem;
+    color: #555;
+    transition: 0.35s;
+}
+#skills li:hover{
+    transform: translateY(-8px);/* 少し上に浮く */
+}
+.hobby-container{
+    max-width: 1500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.hobby-card{
+    width: 420px;
+    overflow: hidden;
+    border-radius: 24px;
+    background: rgba(255,255,255,0.85);
+    box-shadow: 0 18px 40px rgba(0,0,0,0.05);
+    transition: 0.35s ease;
+}
+.hobby-card:hover{
+    transform: translateY(-10px);
+}
+.hobby-card img{
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+}
+.hobby-text{
+    padding: 28px;
+    text-align: left;
+}
+
+.hobby-text h2{
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #444;
+    margin: 15px 0 20px;
+}
+.hobby-text p{
+    color: #666;
+    line-height: 2;
+}
+.worksvisual{
+    width: 100%;
+    height: 65vh;
+    display: block;
+    object-fit: cover;
+}
